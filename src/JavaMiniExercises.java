@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class JavaMiniExercises {
-    public static void main(String[] args) {
+//public class JavaMiniExercises {
+//    public static void main(String[] args) {
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.println("What is Your Age?");
 //        int userAge = scanner.nextInt();
@@ -32,5 +32,6 @@ public class JavaMiniExercises {
 //        System.out.println("Now I'm in the loop. i has not incremented yet and its value is " + i);
 //    }
 //        System.out.println("This is out the far end of the loop. The conditional has tested false. The value of i is what it last incremented to. See? " + i);
-    }
-}
+//    }
+//}
+
