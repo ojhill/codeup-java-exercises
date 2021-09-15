@@ -1,45 +1,45 @@
-
-
+//import java.util.Random;
+//
 //public class ServerNameGenerator {
 //    public static void main(String[] args) {
 //
-//    public static Name[]individual ={
+//    private static String[] individual ={
 //
 //
-//                new individual("Anthony"),
-//                new individual("Shelby"),
-//                new individual("Kristen"),
-//                new individual("George"),
-//                new individual("Javier"),
-//                new individual("Justin"),
-//                new individual("Matt"),
-//                new individual("Joel"),
-//                new individual("Albert"),
-//                new individual("Amanda")
+//                "Anthony",
+//                "Shelby",
+//                "Kristen",
+//                "George",
+//                "Javier",
+//                "Justin",
+//                "Matt",
+//                "Joel",
+//                "Albert",
+//                "Amanda"
 //
 //    }
 //
 //    ;
 //
-//    public static Adjective[]descritpor ={
+//    public static String[] descritpor ={
 //
 //
-//                new descriptor("Funny"),
-//                new descriptor("Smart"),
-//                new descriptor("Fast"),
-//                new descriptor("Cheerful"),
-//                new descriptor("Powerful"),
-//                new descriptor("Wise"),
-//                new descriptor("Chatty"),
-//                new descriptor("Bold"),
-//                new descriptor("Friendly"),
-//                new descriptor("Mean")
-//    }
+//                "Funny",
+//                "Smart",
+//                "Fast",
+//                "Cheerful",
+//                "Powerful",
+//                "Wise",
+//                "Chatty",
+//                "Bold",
+//                "Friendly",
+//                "Mean"
+//    };
 //
-//    ;
-// for(int i = 0; i<individual.length;i++) {
-//        System.out.println(individual[i]);
-//    }
+//  public static int getRandom(String[] array){
+//      String rnd = new Random().nextInt(array.length);
+//      return array[rnd];
+//        }
 //
 //
 //
