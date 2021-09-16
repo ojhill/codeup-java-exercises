@@ -5,4 +5,10 @@ public class Suv extends Vehicle{
     public void makeNoise() {
         System.out.println("Burble Burble");
     }
+    public Suv(){
+
+    }
+//    public Suv(String suvName){
+//        this.name = suvName;
+//    }
 }
