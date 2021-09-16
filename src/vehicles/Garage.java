@@ -6,6 +6,7 @@ public class Garage {
         for (Vehicle vehicle: vehicles){
             System.out.println(vehicle.getName()+ " goes beep beep");
         }
+
     }
 }
 

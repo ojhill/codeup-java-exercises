@@ -26,6 +26,11 @@ public class VehicleTest {
         gtr.setName("gtr");
         System.out.println(gtr.getName() + " goes");
         gtr.makeNoise();
+
+        Suv forrunner = new Suv();
+        forrunner.setName("4runner");
+        System.out.println(forrunner.getName() + " goes");
+        forrunner.makeNoise();
     }
 
 

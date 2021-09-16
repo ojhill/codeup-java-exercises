@@ -7,13 +7,13 @@ public class GarageTest {
         supra.setName("supra");
         Car gtr = new Car();
         gtr.setName("gtr");
-        Car Nissanz = new Car();
-        Nissanz.setName("Nissanz");
+        Suv forrunner = new Suv();
+        forrunner.setName("4runner");
 
         Vehicle[] carsInGarage = new Vehicle[3];
         carsInGarage[0] = supra;
         carsInGarage[1] = gtr;
-        carsInGarage[2] = Nissanz;
+        carsInGarage[2] = forrunner;
 
         Garage garage = new Garage();
         garage.vehicles = carsInGarage;

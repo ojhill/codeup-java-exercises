@@ -17,4 +17,7 @@ public class Bird {
     public void move(){
         System.out.println("flap flap");
     }
+//    public Bird(String name){
+//        this.name = name;
+//    }
 }
