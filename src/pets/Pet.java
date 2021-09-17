@@ -1,4 +1,4 @@
-package Pets;
+package pets;
 
 abstract public class Pet {
     public int age;
