@@ -9,32 +9,34 @@ public class Input {
         String userInput = scanner.nextLine();
         return userInput;
     }
+
     // BONUS: If passed, the method should show the given prompt to the user before parsing the input.
-    public String getString(){
+    public String getString() {
         return getString("Enter a String: ");
     }
 
     public boolean yesNo(String prompt) {
         System.out.println(prompt);
         String userInput = scanner.nextLine();
-        if(userInput.equalsIgnoreCase("yes") || userInput.equalsIgnoreCase("y")) {
+        if (userInput.equalsIgnoreCase("yes") || userInput.equalsIgnoreCase("y")) {
             return true;
         } else {
             return false;
         }
     }
+
     // BONUS: If passed, the method should show the given prompt to the user before parsing the input.
-    public boolean yesNo(){
+    public boolean yesNo() {
         return yesNo("Enter yes or no: ");
     }
 
-    public int getInt(String prompt){
+    public int getInt(String prompt) {
         System.out.println(prompt);
         int userInput = scanner.nextInt();
         return userInput;
     }
 
-    public int getInt(){
+    public int getInt() {
         return getInt("Enter an integer: ");
     }
 
@@ -42,17 +44,30 @@ public class Input {
         System.out.println(prompt);
         int userInput = scanner.nextInt();
         // If userInput is within the min and max, return the input
-        if(userInput > min && userInput < max) {
+        if (userInput > min && userInput < max) {
             return userInput;
         }
         // Otherwise, call getInt again to prompt the user for a new input
         return getInt(min, max);
     }
+
     // BONUS: If passed, the method should show the given prompt to the user before parsing the input.
-    public int getInt(int min, int max){
+    public int getInt(int min, int max) {
         String prompt = "Enter an integer between " + min + " and " + max + ": ";
-        return getInt(min, max, prompt);
+        int input;
+        try {
+            input = Integer.parseInt(getString());
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Not a number!");
+            return getInt(min, max);
+        }
+        if (input <= min || input >= max){
+            return getInt(min, max);
     }
+    return input;
+}
+
 
     public double getDouble(String prompt){
         System.out.println(prompt);
