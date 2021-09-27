@@ -5,5 +5,6 @@ public class MovieTest {
         Movie movie= new Movie(null,null);
         Comedy comedy = new Comedy("Unfunny","Mr Big", false);
         System.out.println(comedy.getName() + " " + comedy.getDirector() + " " + comedy.isFunny());
+        System.out.println(comedy.audienceReaction());
     }
 }
