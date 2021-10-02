@@ -2,22 +2,12 @@ package movies;
 
 public class Movie {
     private String name;
-    private String director;
+    private String category;
 
-    public Movie(String name, String director) {
-        if (name == null || name.isBlank() || director == null || director.isBlank()) ;
-        throw new IllegalArgumentException();
-
+    public Movie(String name, String category) {
+        this.name = name;
+        this.category = category;
     }
-        this.name =name;
-        this.director =director;
-}
-
-    public String audienceReaction(){
-    return "ohhhh" + name + "was so awesome";
-    }
-    public Movie(){}
-
 
     public String getName() {
         return name;
@@ -27,11 +17,12 @@ public class Movie {
         this.name = name;
     }
 
-    public String getDirector() {
-        return director;
+    public String getCategory() {
+        return category;
     }
 
-    public void setDirector(String director) {
-        this.director = director;
+    public void setCategory(String category) {
+        this.category = category;
     }
+
 }
